@@ -1,7 +1,7 @@
 const Collector = require("./Collector")
 const Tsl2561 = require("ada-tsl2561")
 const Measure = require("../measures/Measure")
-const LuminausityMetric = require("../metrics/LuminausityMetric")
+const LuminausityMetric = require("../metrics/LuminosityMetric")
 
 const gainScale = ['1x','16x']
 const integrationScale = [13.7,101,402,'manual']

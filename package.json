@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/EpicKiwi/metrics-spy#readme",
   "dependencies": {
-    "ada-tsl2561": "^1.0.0"
+    "ada-tsl2561": "^1.0.0",
+    "fs-then-native": "^2.0.0",
+    "moment": "^2.22.2"
   }
 }

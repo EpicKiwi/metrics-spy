@@ -1,11 +1,11 @@
 const Metric = require("./Metric")
 
-class LuminausityMetric extends Metric {
+class LuminosityMetric extends Metric {
 
     constructor(){
-        super('luminausity')
+        super('luminosity')
         this.dimentions.push(...[
-            new Metric.Dimention('luminausity','lux'),
+            new Metric.Dimention('luminosity','lux'),
             new Metric.Dimention('broadband'),
             new Metric.Dimention('infrared'),
             new Metric.Dimention('gain'),
@@ -15,4 +15,4 @@ class LuminausityMetric extends Metric {
 
 }
 
-module.exports = LuminausityMetric
+module.exports = LuminosityMetric
