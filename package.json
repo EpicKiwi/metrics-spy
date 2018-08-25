@@ -1,0 +1,22 @@
+{
+  "name": "metrics-spy",
+  "version": "1.0.0",
+  "description": "Un espion permettant de relever les mesures depuis les capteurs d'une machine ",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpicKiwi/metrics-spy.git"
+  },
+  "author": "EpicKiwi <me@epickiwi.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EpicKiwi/metrics-spy/issues"
+  },
+  "homepage": "https://github.com/EpicKiwi/metrics-spy#readme",
+  "dependencies": {
+    "ada-tsl2561": "^1.0.0"
+  }
+}
