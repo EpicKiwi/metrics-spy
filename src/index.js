@@ -1,1 +1,3 @@
-console.log("Hello, world !")
+const CollectorManager = require("./CollectorManager")
+
+CollectorManager.start()
