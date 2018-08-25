@@ -9,10 +9,7 @@ class CollectorManager {
     }
 
     start(){
-        this.collectors.forEach((el) => {
-            el.on('measure',(measure) => console.log(measure))
-            el.start()
-        })
+        this.collectors.forEach((el) => el.start())
     }
 
     stop(){
