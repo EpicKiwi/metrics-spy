@@ -7,9 +7,8 @@ class Metric {
         nextId++
 
         this.name = name
-        this.description = ''
         this.dimentions = [
-            new Dimention('date','ms','La date de la mesure sous forme de timestamp à la milliseconde')
+            new Dimention('date','ms')
         ]
     }
 
@@ -17,10 +16,9 @@ class Metric {
 
 class Dimention {
 
-    constructor(name,unit,description){
+    constructor(name,unit){
         this.name = name
         this.unit = unit
-        this.description = description
     }
 
 }

@@ -1,9 +1,11 @@
 const Metric = require("../metrics/Metric")
 const Measure = require("../measures/Measure")
+const EventEmitter = require("events").EventEmitter
 
-class Collector {
+class Collector extends EventEmitter {
 
     constructor(frequency=1000){
+        super()
 
         this.frequency = frequency
         this.timeoutId = null
@@ -38,6 +40,7 @@ class Collector {
         this.collect()
             .then((result) => {
                 this.pendingMeasures.push(result)
+                this.emit('measure',result)
             })
         this.timeoutId = setTimeout(this.$tick.bind(this),this.frequency)
     }
